@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: CLOUD-CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sharmamedplus/config-server
+          clone-on-start: true
